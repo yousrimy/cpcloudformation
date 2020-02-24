@@ -1,0 +1,16 @@
+{
+    "AWSTemplateFormatVersion" : "2010-09-09",
+    "Description" : "Exercise 1 - EC2 instance in a template with no parameters",
+   	"Resources" : {
+		"MyInstance" : {
+		   "Type" : "AWS::EC2::Instance",
+		   "Properties" : {
+		   		"ImageId" : "ami-0713f98de93617bb4",
+		   		"InstanceType" : "t2.micro",
+		   		"KeyName" : "Yousri",
+		   		"SubnetId" : "subnet-dcace4ba"
+	   		}
+	   	}
+   	}
+}
+
